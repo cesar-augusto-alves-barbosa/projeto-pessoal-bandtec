@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Pridi:wght@500&display=swap');
+
+.video-banner {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    z-index: -3;
+}
+
+.home .banner:before {
+    content: '';
+    height: 100vh;
+    width: 300px;
+    margin-left: 16vw;
+    right: 15vw;
+    position: absolute;
+    transform: skewX(-25deg);
+    background-color: var(--secondary-color);
+    animation-name: anm-banner-before;
+    animation-duration: 9s;
+}
+
+@keyframes anm-banner-before {
+    0%{
+        opacity: 0;
+    }
+    90% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+.home .banner .img-banner {
+    position: absolute;
+    z-index: -2;
+    object-fit: cover;
+    height: 89vh;
+    width: 98.7vw;
+    margin-top: 90px;
+}
+
+.home .banner .title-banner {
+    position: absolute;
+    color: var(--primary-color);
+    top: 20%;
+    right: 20%;
+    font-size: 70px;
+    padding-top: 80px;
+    animation-name: anm-title-banner;
+    animation-duration: 10s;
+}
+
+
+
+@keyframes anm-title-banner {
+    0%{
+        opacity: 0;
+    }
+    90%{
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    91% {
+        color: var(--light-color);
+        text-shadow: 0px 0px 10px var(--light-color);
+    }
+    92% {
+        color: var(--primary-color);
+        text-shadow: 0px 0px 10px var(--primary-color);
+    }
+    93% {
+        color: var(--light-color);
+        text-shadow: 0px 0px 10px var(--light-color);
+    }
+    94% {
+        color: var(--primary-color);
+        text-shadow: 0px 0px 10px var(--primary-color);
+    }
+    95% {
+        color: var(--light-color);
+        text-shadow: 0px 0px 10px var(--light-color);
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 100%;
+    }
+}
+.home .banner .subtitle-banner {
+    position: absolute;
+    color: var(--primary-color);
+    top: 40%;
+    right: 10%;
+    z-index: 1;
+    font-size: 40px;
+    padding-top: 80px;
+    animation-name: anm-subtitle-banner;
+    animation-duration: 12s;
+}
+
+@keyframes anm-subtitle-banner {
+    0%{
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    90%{
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    100%{
+        opacity: 100%;
+        transform: translateX(0px);
+    }
+}
+
+.title-banner:hover {
+    color: black;
+}
+
+/* Main */
+
+/* Programation 2 */
+.main .programation-1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.main .programation-1 .svg-main-1 {
+    height: 40vw;
+}
+.main .programation-1 .paragraph-1 {    
+    cursor: default;
+}
+
+.main .programation-1 .paragraph-1 p::selection {
+    background-color: var(--primary-color);
+}
+.main .programation-1 .paragraph-1 .title-main {
+    font-size: 40px;
+    color: var(--light-color);
+    text-align: center;
+    margin-bottom: 40px;
+}
+.main .programation-1 .paragraph-1 p {
+    width: 600px;
+    font-size: 1.3vw;
+    z-index: -1;
+    text-align: justify;
+    transition-duration: 1s;
+    cursor: help;
+}
+
+.main .programation-1 .paragraph-1 p:hover {
+    transform: scale(1.1) translateX(-60px);
+}
+
+/* Programation 2 */
+
+.main .programation-2 {
+    display: flex;
+    height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+    background-color: var(--secondary-color);
+}
+
+.main .programation-2 .svg-main-2 {
+   height: 40vw;
+}
+
+.main .programation-2 .paragraph-2 p {
+    color: var(--primary-color);
+    font-size: 1.3vw;
+    width: 500px;
+    cursor: default;
+    z-index: -1;
+    text-align: justify;
+    transition-duration: 1s;
+}
+
+.main .programation-2 .paragraph-2 p:hover {
+    cursor: help;
+    transform: scale(1.2) translateX(60px);
+}
+.main .programation-2 .paragraph-2 p::selection {
+    background-color: black;
+}
+.main .programation-2 .paragraph-2 p a {
+    color: var(--light-color);
+    transition-duration: 400ms;
+    text-decoration: none;
+}
+
+.main .programation-2 .paragraph-2 p a:hover {
+    text-shadow: 0px 0px 10px var(--light-color);
+}
+
+/* Programation 3 */
+
+.main .programation-3 {
+    display: flex;
+    height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0b7916;
+}
+
+.main .programation-3 .svg-main-3 {
+   height: 30vw;
+}
+
+.main .programation-3 .paragraph-3 p {
+    color: black;
+    font-size: 1.3vw;
+    width: 500px;
+    cursor: default;
+    z-index: -1;
+    text-align: justify;
+    transition-duration: 1s;
+}
+
+.main .programation-3 .paragraph-3 p:hover {
+    transform: scale(1.2) translateX(-60px);
+    cursor: help;
+}
+.main .programation-3 .paragraph-3 p::selection {
+    background-color: var(--light-secondary-color);
+}
+.main .programation-3 .paragraph-3 p a {
+    color: var(--light-secondary-color);
+    transition-duration: 400ms;
+    text-decoration: none;
+}
+
+.main .programation-3 .paragraph-3 p a:hover {
+    text-shadow: 0px 0px 20px var(--gray-ligth-color);
+}

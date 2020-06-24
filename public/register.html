@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Thought Code</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/register.css">
+    <link rel="shortcut icon" href="./images/pageImg.png">
+</head>
+
+<body>
+    <div class="container page">
+        <div class="box-register">
+            <form class="register" id="form_cadastro" method="post" onsubmit="return cadastrar()">
+                <h1 class="title">Cadastre-se</h1>
+                <label for="nome">Nome</label>
+                <input type="text" required minlength="4" name="nome" id="name">
+                <label for="login">Email</label>
+                <input type="text" name="login" id="email">
+                <label for="senha">Senha</label>
+                <input type="password" required minlength="4" name="senha" id="password">
+                <label for="confi_senha">Confirmar Senha</label>
+                <input type="password" required minlength="4" name="confi_senha" id="confi_password">
+                <div class="bt-back">
+                    <a href="./index.html">
+                        <img src="./images/back_register.svg" alt="Seta para voltar">
+                        Voltar</a>
+                    <button>Cadastrar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="./js/register.js"></script>
+
+</html>

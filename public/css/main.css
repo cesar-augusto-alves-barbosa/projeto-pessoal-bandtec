@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Pridi:wght@500&display=swap');
+:root {
+    --primary-color: #009C10;
+    --secondary-color: #171717;
+    --light-color: #00FF19;
+    --light-secondary-color: #37474F;
+    --gray-ligth-color: #7a8d97;
+}
+
+* {
+    font-family: 'Pridi', serif;
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    animation-name: anm-pages;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes anm-pages {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+/* Scroll Bar */
+
+
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+
+  ::-webkit-scrollbar-track {
+    background: var(--gray-ligth-color);
+  }
+  
+
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(var(--primary-color), var(--secondary-color));
+  }
+  
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-color);
+  }
+
+/* Navigation */
+
+ .sidebar {
+    display: flex;
+    position: fixed;
+    height: 100%;
+    transform: translateX(-350px);
+    width: 350px;
+    background-color: var(--secondary-color);
+    flex-direction: column;
+    z-index: 3;
+    box-shadow: 5px 5px 35px black;
+}
+
+ .sidebar .title-nav-bar {
+    font-size: 40px;
+    text-shadow: 1px 1px 8px black;
+    color: var(--primary-color);
+    margin-left: 35px;
+    width: 259px;
+    margin-top: 20px;
+    margin-bottom: 70px;
+    border-bottom: 5px solid var(--primary-color);
+}
+
+ .sidebar .link {
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+    margin-left: 90px;
+    transition-duration: 400ms;
+    cursor: pointer;
+}
+
+.sidebar .link:hover {
+    color: black;
+}
+
+.sidebar .link::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 60px;
+    z-index: -1;
+    transition-duration: 400ms;
+    background-image: linear-gradient(to right, var(--secondary-color), var(--primary-color));
+}
+.sidebar .link:hover::before {
+    width: 50%;
+}
+
+.sidebar .link::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 0;
+    height: 60px;
+    z-index: -1;
+    transition-duration: 400ms;
+    background-image: linear-gradient(to left, var(--secondary-color), var(--primary-color));
+}
+.sidebar .link:hover::after {
+    width: 50%;
+}
+
+ .top-bar {
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+    width: 100%;
+    z-index: 2;
+}
+.top-bar:hover {
+    box-shadow: 0px 0px 10px var(--gray-ligth-color);
+}
+
+.top-bar::before {
+    content: '';
+    position: absolute;
+    height: 90px;
+    left: 0;
+    transition-duration: 400ms;
+    z-index: -1;
+    width: 0;
+    background-image: linear-gradient(to right, var(--secondary-color) 30%, var(--light-secondary-color) 70%);
+}
+
+.top-bar:hover::before {
+    width: 50%;
+}
+
+.top-bar::after {
+    content: '';
+    position: absolute;
+    height: 90px;
+    right: 0;
+    transition-duration: 400ms;
+    z-index: -1;
+    width: 0;
+    background-image: linear-gradient(to left, var(--secondary-color) 30%, var(--light-secondary-color)70%);
+}
+
+.top-bar:hover::after {
+    width: 50%;
+}
+
+ .title-bar {
+    font-size: 40px;
+    text-shadow: 1px 1px 8px black;
+    cursor: default;
+    color: var(--primary-color);
+    opacity: 0;
+    transform: translateY(-20px);
+}
+.top-bar:hover .title-bar {
+    transition-duration: 1s;
+    opacity: 100%;
+    transform: translateY(0px);
+}
+
+ .title-bar:hover {
+    color: var(--light-color);
+}
+
+  .bt-menu {
+   width: 50px;
+   height: 50px;
+   cursor: pointer;
+   background-size: 60px 60px;
+   transition-duration: .5s;
+   margin-left: 200px
+}
+
+  .bt-menu:hover {
+    filter: saturate(5);
+}

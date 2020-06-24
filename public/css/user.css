@@ -1,0 +1,141 @@
+/* Beginners */
+
+.container-beginners {
+    height: 370vh;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    color: var(--gray-ligth-color);
+
+}
+.beginners {
+ display: flex;
+ width: 70vw;
+ padding-top: 90px;
+ flex-direction: column;
+}
+.beginners  hr {
+    border-color: var(--gray-ligth-color);
+    background-color: var(--gray-ligth-color);
+    height: 3px;
+    margin-bottom: 20px;
+}
+.welcome {
+    font-size: 60px;
+}
+.welcome::selection{
+    background-color: var(--gray-ligth-color);
+}
+.beginners .subtitle-beginners {
+    font-size: 24.4px;
+}
+
+.beginners .subtitle-beginners::selection{
+    background-color: var(--gray-ligth-color);
+}
+
+.tips-beginners {
+    display: flex;
+}
+
+
+
+.tips-beginners .paragraphs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.tips-beginners .paragraphs p {
+    width: 30vw;
+    text-align: justify;
+    color: var(--gray-ligth-color);
+    animation-name: anm-left;
+    animation-duration: 1.5s;
+}
+.tips-beginners .paragraphs::selection{
+    background-color: var(--gray-ligth-color);
+}
+
+.tips-beginners .icon-beginners {
+    height: 45vw;
+    animation-name: anm-right;
+    animation-duration: 1.5s;
+}
+
+
+
+.bottom-paragraph {
+    animation-name: anm-left;
+    animation-duration: 1.5s;
+    text-align: justify;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 200vh;
+    color: var(--gray-ligth-color);
+}
+.bottom-paragraph p::selection{
+    background-color: var(--gray-ligth-color);
+}
+.video-beginners {
+    width: 100%;
+    height: 500px;
+}
+/* Devs */
+
+.conteiner-devs {
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    background-color: var(--gray-ligth-color);
+}
+.devs {
+    display: flex;
+    width: 70vw;
+    padding-top: 90px;
+    flex-direction: column;
+}
+
+.devs .subtitle-devs {
+    font-size: 26.5px;
+}
+.devs .tips-devs {
+    display: flex;
+    justify-content: space-around;
+}
+.devs .tips-devs .icon-devs {
+    height: 40vw;
+}
+.devs .tips-devs .paragraphs {
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.devs .tips-devs .paragraphs p {
+    width: 30vw;
+}
+
+@keyframes anm-left{
+    0%{
+        opacity: 0;
+        transform: translateX(-70px);
+    }
+    100%{
+        opacity: 100%;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes anm-right{
+    0%{
+        opacity: 0;
+        transform: translateX(70px);
+    }
+    100%{
+        opacity: 100%;
+        transform: translateX(0px);
+    }
+}
