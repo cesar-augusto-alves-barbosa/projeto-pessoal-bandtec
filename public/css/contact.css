@@ -8,10 +8,13 @@
     background-color: var(--light-secondary-color);
 }
 
+
 .contact .social {
     display: flex;
     flex-direction: column;
     font-size: 2vw;
+    animation-name: anm-left;
+    animation-duration: 1.5s;
 }
 
 .contact .social .title-contact {
@@ -26,4 +29,28 @@
 
 .img-contact {
     height: 80vh;
+    animation-name: anm-right;
+    animation-duration: 1.5s;
+}
+
+@keyframes anm-left{
+    0%{
+        opacity: 0;
+        transform: translateX(-70px);
+    }
+    100%{
+        opacity: 100%;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes anm-right{
+    0%{
+        opacity: 0;
+        transform: translateX(70px);
+    }
+    100%{
+        opacity: 100%;
+        transform: translateX(0px);
+    }
 }

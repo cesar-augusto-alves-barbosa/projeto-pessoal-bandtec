@@ -52,7 +52,7 @@
     animation-name: anm-left;
     animation-duration: 1.5s;
 }
-.tips-beginners .paragraphs::selection{
+.tips-beginners .paragraphs p::selection{
     background-color: var(--gray-ligth-color);
 }
 
@@ -75,7 +75,9 @@
     height: 200vh;
     color: var(--gray-ligth-color);
 }
-.bottom-paragraph p::selection{
+.bottom-paragraph p::selection,
+.bottom-paragraph h1::selection,
+.bottom-paragraph h4::selection{
     background-color: var(--gray-ligth-color);
 }
 .video-beginners {
@@ -102,10 +104,12 @@
     font-size: 26.5px;
 }
 .devs .tips-devs {
-    display: flex;
+    display: none;
     justify-content: space-around;
 }
 .devs .tips-devs .icon-devs {
+    animation-name: anm-left;
+    animation-duration: 1.5s;
     height: 40vw;
 }
 .devs .tips-devs .tips {
@@ -119,17 +123,31 @@
     list-style: none;
     margin: 20px 0px;
     width: 40vw;
+    animation-name: anm-right;
+    animation-duration: 1.5s;
 }
 
 /* Sugestions */
 
 .sugestions {
     width: 70vw;
+    display: none;
 }
 .sugestions .list-sugestions li {
     list-style: none;
     margin: 20px 0px;
 }
+
+.sugestions .list-sugestions li:nth-child(odd) {
+    animation-name: anm-left;
+    animation-duration: 1.5s;
+}
+
+.sugestions .list-sugestions li:nth-child(even) {
+    animation-name: anm-right;
+    animation-duration: 1.5s;
+}
+
 .sugestions .list-sugestions li a {
     color: #cecece;
     text-decoration: none;
