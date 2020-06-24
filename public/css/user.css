@@ -85,9 +85,10 @@
 /* Devs */
 
 .conteiner-devs {
-    height: 120vh;
+    height: 190vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     background-color: var(--gray-ligth-color);
 }
 .devs {
@@ -107,15 +108,31 @@
 .devs .tips-devs .icon-devs {
     height: 40vw;
 }
-.devs .tips-devs .paragraphs {
+.devs .tips-devs .tips {
     text-align: justify;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
-.devs .tips-devs .paragraphs p {
-    width: 30vw;
+.devs .tips-devs .tips ul li  {
+    list-style: none;
+    margin: 20px 0px;
+    width: 40vw;
+}
+
+/* Sugestions */
+
+.sugestions {
+    width: 70vw;
+}
+.sugestions .list-sugestions li {
+    list-style: none;
+    margin: 20px 0px;
+}
+.sugestions .list-sugestions li a {
+    color: #cecece;
+    text-decoration: none;
 }
 
 @keyframes anm-left{

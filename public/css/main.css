@@ -37,17 +37,17 @@
   
 
   ::-webkit-scrollbar-track {
-    background: var(--gray-ligth-color);
+    background: #002a0f;
   }
   
 
   ::-webkit-scrollbar-thumb {
-    background: linear-gradient(var(--primary-color), var(--secondary-color));
+    background: linear-gradient(var(--light-secondary-color), var(--secondary-color));
   }
   
 
   ::-webkit-scrollbar-thumb:hover {
-    background: var(--primary-color);
+    background: linear-gradient(var(--gray-ligth-color), var(--secondary-color));
   }
 
 /* Navigation */
